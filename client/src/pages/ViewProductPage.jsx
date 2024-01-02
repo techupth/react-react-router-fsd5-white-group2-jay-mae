@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom'; 
+
 function ViewProductPage() {
   return (
     <div>
@@ -6,7 +9,7 @@ function ViewProductPage() {
         <h2>Product Title</h2>
         <p>Content</p>
       </div>
-      <button>Back to Home</button>
+      <button onClick={() => navigate("/")} >Back to Home</button>
     </div>
   );
 }
